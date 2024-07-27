@@ -1,0 +1,7 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"); // стороннее обнуление
+@import "./utils/root"; // группировка сттилей и руты (root)
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "./utils/app"; // собственное обнуление
+@import "./components/header"; // header
+@import "./components/main"; // main
+@import "./components/footer"; // footer
