@@ -4,9 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>EShop</title>
   </head>
   <body>
-    
+    <header>
+      <nav>
+        <div>
+          <a href="#"><img src="./assets/images/logo.png" alt="logo" /></a>
+        </div>
+        <div>
+          <ul>
+            <li><a href="#">Решения</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Наши проекты</a></li>
+            <li><a href="#">Мероприятия</a></li>
+            <li><a href="#">Оборудование</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+        </div>
+        <div>
+          <button>свяжитесь с нами</button>
+        </div>
+      </nav>
+      <div class="carousel-box" id="app">
+        <div class="carousel">
+          <div class="prev-arrow"><i class="fa-solid fa-chevron-left"></i></div>
+
+          <div class="carousel-sections-scroll">
+            <div class="carousel-sections">
+              <div class="carousel-section">
+                <img src="./assets/images/store_picture.png" alt="store" />
+              </div>
+              <div class="carousel-section">
+                <img src="./assets/images/store_picture.png" alt="store" />
+              </div>
+              <div class="carousel-section">
+                <img src="./assets/images/store_picture.png" alt="store" />
+              </div>
+              <div class="carousel-section">
+                <img src="./assets/images/store_picture.png" alt="store" />
+              </div>
+            </div>
+          </div>
+
+          <div class="next-arrow">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="inner-text">
+          <p>Комплексные решения</p>
+          <p>для сетевых магазинов и фирменной торговли</p>
+        </div>
+          <div class="carousel-dots">
+            <div class="carousel-dot"><img src="./assets/images/icon-shop.png" alt="icon-shop"><p>Сетевые магазины и фирменная торговля</p></div>
+            <div class="carousel-dot"><img src="./assets/images/icon-pretzel.png" alt="icon-pretzel"><p>Пекарня и кондитерские</p></div>
+            <div class="carousel-dot"><img src="./assets/images/icon-pot.png" alt="icon-pot"><p>Мясные цеха и кулинария</p></div>
+            <div class="carousel-dot"><img src="./assets/images/icon-food.png" alt="icon-food"><p>Рестораны и кафе</p></div>
+          </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script src="./logic/index.js"></script>
   </body>
 </html>
