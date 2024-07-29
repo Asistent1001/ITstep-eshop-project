@@ -16,10 +16,10 @@
   <body>
     <header>
       <nav>
-        <div>
+        <div class="nav-section-height">
           <a href="#"><img src="./assets/images/logo.png" alt="logo" /></a>
         </div>
-        <div>
+        <div class="nav-section-height">
           <ul>
             <li><a href="#">Решения</a></li>
             <li><a href="#">Услуги</a></li>
@@ -29,8 +29,29 @@
             <li><a href="#">О нас</a></li>
           </ul>
         </div>
-        <div>
-          <button>свяжитесь с нами</button>
+        <div class="contact-us-popover-box">
+          <button class="modal-button" popovertarget="contact-us">
+            свяжитесь с нами
+          </button>
+          <div class="contact-us-box" id="contact-us" popover>
+            <form>
+              <label>
+                <span>Имя</span>
+                <input type="text" required />
+              </label>
+              <label>
+                <span>Фамилия</span>
+                <input type="text" required />
+              </label>
+              <label>
+                <span>Номер телефона</span>
+                <input type="number" required />
+              </label>
+              <div class="contact-us-submit-button">
+                <input type="submit" value="Связаться" />
+              </div>
+            </form>
+          </div>
         </div>
       </nav>
       <div class="carousel-box" id="app">
@@ -63,15 +84,102 @@
           <p>Комплексные решения</p>
           <p>для сетевых магазинов и фирменной торговли</p>
         </div>
-          <div class="carousel-dots">
-            <div class="carousel-dot"><img src="./assets/images/icon-shop.png" alt="icon-shop"><p>Сетевые магазины и фирменная торговля</p></div>
-            <div class="carousel-dot"><img src="./assets/images/icon-pretzel.png" alt="icon-pretzel"><p>Пекарня и кондитерские</p></div>
-            <div class="carousel-dot"><img src="./assets/images/icon-pot.png" alt="icon-pot"><p>Мясные цеха и кулинария</p></div>
-            <div class="carousel-dot"><img src="./assets/images/icon-food.png" alt="icon-food"><p>Рестораны и кафе</p></div>
+        <div class="carousel-dots">
+          <div class="carousel-dot">
+            <img src="./assets/images/icon-shop.png" alt="icon-shop" />
+            <p>Сетевые магазины и фирменная торговля</p>
           </div>
+          <div class="carousel-dot">
+            <img src="./assets/images/icon-pretzel.png" alt="icon-pretzel" />
+            <p>Пекарня и кондитерские</p>
+          </div>
+          <div class="carousel-dot">
+            <img src="./assets/images/icon-pot.png" alt="icon-pot" />
+            <p>Мясные цеха и кулинария</p>
+          </div>
+          <div class="carousel-dot">
+            <img src="./assets/images/icon-food.png" alt="icon-food" />
+            <p>Рестораны и кафе</p>
+          </div>
+        </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div class="company-head-information">
+        <div class="company-head-picture">
+          <img
+            src="./assets/images/company-head.png"
+            alt="company-head-picture"
+          />
+        </div>
+        <div class="company-head-text">
+          <p>Успех – это уравнение со всеми известными составляющими:</p>
+          <p>
+            энергия команды, экспертный опыт, комплексный подход к проекту.
+            Остается только умножить одно на другое и разделить успех вместе с
+            партнером
+            <img
+              class="quote-marks"
+              src="./assets/images/quote-marks.png"
+              alt="quote-marks"
+            />
+          </p>
+          <p>Сергей Чернышев</p>
+          <p>директор ООО «НХЛ-Ритейл»</p>
+          <div class="ask-your-question-popover-box">
+            <button
+              class="ask-your-question-modal-button"
+              popovertarget="ask-your-question"
+            >
+              Задайте свой вопрос
+            </button>
+            <div class="ask-your-question-box" id="ask-your-question" popover>
+              <form>
+                <label>
+                  <span>Имя</span>
+                  <input type="text" required />
+                </label>
+                <label>
+                  <span>Фамилия</span>
+                  <input type="text" required />
+                </label>
+                <label>
+                  <span>Ваша почта</span>
+                  <input type="email" required />
+                </label>
+                <label>
+                  <span>Ваш вопрос</span>
+                  <textarea required cols="30"> </textarea>
+                </label>
+                <div class="ask-your-question-submit-button">
+                  <input type="submit" value="Спросить" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="information-about-company">
+        <img src="./assets/images/work_picture.png" alt="work_picture" />
+        <div class="information-about-company-text">
+          <p>ООО «НХЛ-Ритейл»</p>
+          <p>
+            Мы гордимся тем, что на сегодняшний день наша компания НХЛ-Ритейл
+            является одной из ведущих компаний, специализирующихся на
+            предоставлении комплексных решений по оснащению розничных сетей и
+            центральных производств при них.
+          </p>
+          <div class="information-about-company-interactive">
+            <div class="information-about-company-play-button">
+              <img src="./assets/images/play-button.svg" alt="play-button">
+            </div>
+
+          </div>
+          <p>Видео о нашей компании</p>
+        </div>
+      </div>
+    </main>
+
     <footer></footer>
     <script src="./logic/index.js"></script>
   </body>
