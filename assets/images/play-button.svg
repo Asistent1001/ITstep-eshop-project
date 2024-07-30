@@ -1,6 +1,6 @@
-<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg">
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <!-- Круг -->
-  <circle cx="60" cy="60" r="58" stroke="#fafafa" stroke-width="2" fill="none" />
+  <circle cx="100" cy="100" r="98" stroke="#fafafa" stroke-width="2" fill="none"/>
   <!-- Треугольник -->
-  <polygon points="60,35 110,60 60,85" fill="#fafafa" />
+  <polygon points="75,55 150,100 75,145" fill="#fafafa"/>
 </svg>

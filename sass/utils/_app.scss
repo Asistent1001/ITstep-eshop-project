@@ -5,6 +5,10 @@
   color: var(--project-black);
 }
 
+html, body{
+  max-width: 1920px;
+}
+
 li {
   list-style: none;
 }

@@ -170,17 +170,133 @@
             центральных производств при них.
           </p>
           <div class="information-about-company-interactive">
-            <div class="information-about-company-play-button">
-              <img src="./assets/images/play-button.svg" alt="play-button">
-            </div>
-
+            <button
+              class="information-about-company-play-button"
+              popovertarget="information-about-company-video"
+              popovertargetaction="show"
+            >
+              <img src="./assets/images/play-button.svg" alt="play-button" />
+            </button>
           </div>
           <p>Видео о нашей компании</p>
+        </div>
+        <div
+          class="information-about-company-video-popover"
+          id="information-about-company-video"
+          popover
+        >
+          <div class="information-about-company-video-box">
+            <div class="video-popover-helper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/5fJQNcfgAu8?si=aJG_cYaLrEOW0EdZ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              >
+              </iframe>
+              <button
+                class="information-about-company-close-popover-button"
+                popovertarget="information-about-company-video"
+                popovertargetaction="hide"
+              >
+                <img
+                  src="./assets/images/close-button.svg"
+                  alt="close-button"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-projects">
+        <p>Наши проекты</p>
+        <div class="carousel-2">
+          <ul>
+            <li>
+              <img src="./assets/images/fresh-bread.png" alt="fresh-bread" />
+              <p class="our-projects-text-description">
+                Расширение ассортимента пекарни
+              </p>
+              <p class="our-projects-news-location">г. Благовещенск</p>
+              <div class="our-projects-news-hashtag-box">
+                <div class="our-projects-news-hashtag">Пекарня</div>
+
+              </div>
+            </li>
+            <li>
+              <img
+                src="./assets/images/fish-on-the-shelf.png"
+                alt="fish-on-the-shelf"
+              />
+              <p class="our-projects-text-description">
+                Оснащение продуктового магазина, рыба холодного копчения
+              </p>
+              <p class="our-projects-news-location">
+                Сеть супермаркетов "Перекрёсток"
+              </p>
+              <div class="our-projects-news-hashtag-box">
+                <div class="our-projects-news-hashtag">Магазины</div>
+
+              </div>
+            </li>
+            <li>
+              <img
+                src="./assets/images/bread-on-the-shelf.png"
+                alt="bread-on-the-shelf"
+              />
+              <p class="our-projects-text-description">
+                Оснащение пекарни, хлеба на живой закваске
+              </p>
+              <p class="our-projects-news-location">
+                Сеть супермаркетов "Яблоко", Крым
+              </p>
+              <div class="our-projects-news-hashtag-box">
+                <div class="our-projects-news-hashtag">Пекарня</div>
+                <div class="our-projects-news-hashtag">Магазины</div>
+
+              </div>
+            </li>
+            <li>
+              <img
+                src="./assets/images/man-baking-bread.png"
+                alt="man-baking-bread"
+              />
+              <p class="our-projects-text-description">
+                Комплексное оснащение пекарни, ржаные и заварные хлеба
+              </p>
+              <p class="our-projects-news-location">
+                Сеть удобных магазинов "Титан", г. Улан-Удэ
+              </p>
+              <div class="our-projects-news-hashtag-box">
+                <div class="our-projects-news-hashtag">Пекарня</div>
+                <div class="our-projects-news-hashtag">Магазины</div>
+
+              </div>
+            </li>
+            <li>
+              <img src="./assets/images/fresh-bread.png" alt="fresh-bread" />
+              <p class="our-projects-text-description">
+                Расширение ассортимента пекарни
+              </p>
+              <p class="our-projects-news-location">г. Благовещенск</p>
+              <div class="our-projects-news-hashtag-box">
+                <div class="our-projects-news-hashtag">Пекарня</div>
+
+              </div>
+            </li>
+          </ul>
+          <button class="nav-button prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="nav-button next"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
       </div>
     </main>
 
     <footer></footer>
     <script src="./logic/index.js"></script>
+    <script src="./logic/carouser-2.js"></script>
   </body>
 </html>
