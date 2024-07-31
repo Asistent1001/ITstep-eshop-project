@@ -106,6 +106,10 @@ header {
   transition: 250ms transform ease-in;
 }
 
+.carousel-section-pictur{
+  object-fit: none;
+}
+
 .carousel-sections > div {
   border-radius: 24px;
   //   img{

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Butchery</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-section-height">
+          <a href="./index.html"
+            ><img src="./assets/images/logo.png" alt="logo"
+          /></a>
+        </div>
+        <div class="nav-section-height">
+          <ul>
+            <li><a href="./butchery.html">Решения</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Наши проекты</a></li>
+            <li><a href="#">Мероприятия</a></li>
+            <li><a href="#">Оборудование</a></li>
+            <li><a href="#">О нас</a></li>
+          </ul>
+        </div>
+        <div class="contact-us-popover-box">
+          <button class="modal-button" popovertarget="contact-us">
+            свяжитесь с нами
+          </button>
+          <div class="contact-us-box" id="contact-us" popover>
+            <form>
+              <label>
+                <span>Имя</span>
+                <input type="text" required />
+              </label>
+              <label>
+                <span>Фамилия</span>
+                <input type="text" required />
+              </label>
+              <label>
+                <span>Номер телефона</span>
+                <input type="number" required />
+              </label>
+              <div class="contact-us-submit-button">
+                <input type="submit" value="Связаться" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="butchery-main">
+      <aside>
+        <nav class="left-side-navigation">
+          <div>
+            <p class="left-side-navigation-description">Решения</p>
+          </div>
+          <div class="left-side-navigation-items">
+            <ul>
+              <a href="#">
+                <li>
+                  <div>
+                    <img src="./assets/images/color-icon-pretzel.png" />
+                  </div>
+                  <div><p>Пекарня</p></div>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <div><img src="./assets/images/color-icon-pizza.png" /></div>
+                  <div><p>Пиццерия</p></div>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <div><img src="./assets/images/color-icon-burger.png" /></div>
+                  <div><p>Кулинария</p></div>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <div>
+                    <img src="./assets/images/color-icon-chicken-leg.png" />
+                  </div>
+                  <div><p>Мясной цех</p></div>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <div><img src="./assets/images/color-icon-shop.png" /></div>
+                  <div><p>Магазин</p></div>
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <div><img src="./assets/images/color-icon-food.png" /></div>
+                  <div><p>Ресторан</p></div>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+      <div class="butchery-main-div">
+        <div class="butchery-main-div-introduction">
+          <img src="./assets/images/meat-main-picture.png" alt="meat-picture" />
+          <div class="information">
+            <div class="information-name">
+              <p>Мясной цех</p>
+            </div>
+            <div class="information-text">
+              <p>
+                Большое число людей предпочитает более удобный формат, даже
+                несмотря на значительную переплату
+              </p>
+            </div>
+            <div class="information-hashtags">
+              <div>
+                <p>20 клиентов</p>
+              </div>
+              <div>
+                <p>150 оборудования</p>
+              </div>
+            </div>
+            <div class="information-butchery-video-box">
+              <button
+                class="information-play-button-butchery"
+                popovertarget="information-butchery-video"
+                popovertargetaction="show"
+              >
+                <img src="./assets/images/play-button.svg" alt="play-button" />
+                <div class="information-butchery-arrow">
+                  <div class="information-butchery-arrow-circle-start"></div>
+                  <div class="information-butchery-arrow-segment"></div>
+                  <div class="information-butchery-arrow-circle-end"></div>
+                  <p>Больше о мясном цехе</p>
+                </div>
+              </button>
+            </div>
+            <div
+              class="information-about-company-video-popover"
+              id="information-butchery-video"
+              popover
+            >
+              <div class="information-about-company-video-box">
+                <div class="video-popover-helper">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/5fJQNcfgAu8?si=aJG_cYaLrEOW0EdZ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  >
+                  </iframe>
+                  <button
+                    class="information-about-company-close-popover-button"
+                    popovertarget="information-butchery-video"
+                    popovertargetaction="hide"
+                  >
+                    <img
+                      src="./assets/images/close-button.svg"
+                      alt="close-button"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more-butchery-information">
+          <p>
+            Мясной цех занимается производством различных полуфабрикатов,
+            от крупных кусков (например для запекания или жарки) до пельменей
+            и голубцов.
+          </p>
+          <p>
+            Мясной цех занимается производством различных полуфабрикатов,
+            от крупных кусков (например, для запекания или жарки) до пельменей
+            и голубцов. В наше время не всякий покупатель приходит в магазин,
+            например, за целым куском мяса. Большое число людей предпочитает
+            более удобный формат, даже несмотря на значительную переплату.
+            Соответственно, производство полуфабрикатов может быть выгодным,
+            если правильно организовать все этапы производства: от закупки сырья
+            до разделывания и хранения готовых полуфабрикатов.
+          </p>
+        </div>
+        <!-- <div class="solutions-for-business">
+          <p class="solutions-for-business-description">Решения для вашего бизнеса</p>
+          <div>
+            <p>Центральное производство</p>
+            <img
+              class="arrow-down-style"
+              src="./assets/images/arrow-down.svg"
+            />
+          </div>
+          <div>
+            <p>При супермаркете / гипермаркете</p>
+            <img
+              class="arrow-down-style"
+              src="./assets/images/arrow-down.svg"
+            />
+          </div>
+          <div>
+            <p>При магазине «У дома»</p>
+            <img
+              class="arrow-down-style"
+              src="./assets/images/arrow-down.svg"
+            />
+          </div>
+        </div> -->
+
+        <div class="solutions-for-business">
+          <p class="solutions-for-business-description">
+            Решения для вашего бизнеса
+          </p>
+          <div class="toggle-section" data-target="section1">
+            <p>Центральное производство</p>
+            <img
+              class="arrow-down-style"
+              src="./assets/images/arrow-down.svg"
+              alt="Toggle"
+            />
+          </div>
+          <div class="toggle-content" id="section1">
+            <p>
+              Мясной цех занимается производством различных полуфабрикатов, от
+              крупных кусков (например, для запекания или жарки) до пельменей и
+              голубцов.
+            </p>
+          </div>
+
+          <div class="toggle-section" data-target="section2">
+            <p>При супермаркете / гипермаркете</p>
+            <img
+              class="arrow-down-style"
+              src="./assets/images/arrow-down.svg"
+              alt="Toggle"
+            />
+          </div>
+          <div class="toggle-content" id="section2">
+            <p>
+              Мясной цех занимается производством различных полуфабрикатов, от
+              крупных кусков (например, для запекания или жарки) до пельменей и
+              голубцов.
+            </p>
+          </div>
+
+          <div class="toggle-section" data-target="section3">
+            <p>При магазине «У дома»</p>
+            <img
+              class="arrow-down-style"
+              src="./assets/images/arrow-down.svg"
+              alt="Toggle"
+            />
+          </div>
+          <div class="toggle-content" id="section3">
+            <p>
+              Мясной цех занимается производством различных полуфабрикатов, от
+              крупных кусков (например, для запекания или жарки) до пельменей и
+              голубцов.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </main>
+    <footer>
+        <div class="about-us">
+          <div class="about-us-text">
+            <p>
+              Есть идеи, но не знаете, с чего начать? Или хотите создать бизнес,
+              но не знаете, что бы это могло быть?
+            </p>
+          </div>
+          <div>
+            <button
+                class="about-us-question-modal-button"
+                popovertarget="ask-your-question"
+              >
+                Задайте свой вопрос
+              </button>
+          </div>
+          <div class="about-us-media">
+            <div>
+              <p>
+                Мы в <span>соцсетях</span>
+              </p>
+            </div>
+            <div class="about-us-media-icons">
+              <div>
+                <img src="./assets/images/instagram-icon.svg" alt="instagram-icon">
+              </div>
+              <div>
+                <img src="./assets/images/facebook-icon.svg" alt="facebook-icon">
+              </div>
+              <div>
+                <img src="./assets/images/youtube-icon.svg" alt="youtube-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-informations">
+          <div class="footer-informations-aling">
+            <div class="footer-informations-aling">
+              <p>&#169; ООО &laquo;НХЛ-Ритейл&raquo;, 2022</p>
+            </div>
+            <div class="footer-informations-aling">
+              <p>г. Нижний Новгород, ул. Свободы, д. 63</p>
+            </div>
+            <div class="footer-informations-aling">
+              <div class="footer-informations-aling footer-informations-text-decoration">
+                <p>retail@nizhhleb.ru</p>
+              </div>
+              <div class="footer-informations-aling footer-informations-text-decoration">
+                <p>Политика конфиденциальности</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-informations-aling">
+            <p>Сделано в &laquo;Воздухе&raquo;</p>
+          </div>
+        </div>
+      </footer>
+    <script src="./logic/curtains.js"></script>
+  </body>
+</html>
