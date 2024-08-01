@@ -8,9 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (content.classList.contains('open')) {
         content.classList.remove('open');
+        section.classList.remove('open');
       } else {
         document.querySelectorAll('.toggle-content.open').forEach(c => c.classList.remove('open'));
+        document.querySelectorAll('.toggle-section.open').forEach(s => s.classList.remove('open'));
         content.classList.add('open');
+        section.classList.add('open');
       }
     });
   });

@@ -1,15 +1,15 @@
-const uniqueCarousels = [
+const extraCarousels = [
     {
-      ul: document.querySelector('.unique-carousel ul'),
-      prevButton: document.querySelector('.unique-carousel .unique-prev'),
-      nextButton: document.querySelector('.unique-carousel .unique-next'),
+      ul: document.querySelector('.extra-carousel ul'),
+      prevButton: document.querySelector('.extra-carousel .extra-prev'),
+      nextButton: document.querySelector('.extra-carousel .extra-next'),
       index: 0,
       itemsToShow: 3,
       itemWidth: 100 / 3
     }
   ];
   
-  function showSlide(carousel, newIndex) {
+  function showExtraSlide(carousel, newIndex) {
     const { ul, itemsToShow, itemWidth } = carousel;
     const slides = ul.querySelectorAll('li');
     if (newIndex < 0) {
@@ -22,13 +22,13 @@ const uniqueCarousels = [
     ul.style.transform = `translateX(${-carousel.index * itemWidth}%)`;
   }
   
-  uniqueCarousels.forEach(carousel => {
+  extraCarousels.forEach(carousel => {
     carousel.prevButton.addEventListener('click', () => {
-      showSlide(carousel, carousel.index - 1);
+      showExtraSlide(carousel, carousel.index - 1);
     });
   
     carousel.nextButton.addEventListener('click', () => {
-      showSlide(carousel, carousel.index + 1);
+      showExtraSlide(carousel, carousel.index + 1);
     });
   });
   

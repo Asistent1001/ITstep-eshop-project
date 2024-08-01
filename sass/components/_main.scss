@@ -116,7 +116,9 @@ main {
     justify-content: center;
   }
   .information-about-company-main-picture {
-    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
   }
 
   .information-about-company-text {
@@ -609,7 +611,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
   div {
     min-width: 290px;
   }
@@ -653,12 +654,13 @@ main {
   }
 }
 
-.butchery-main-div {
-  width: 100%;
-}
 
 .information {
   position: relative;
+}
+
+.butchery-main-div-introduction-picture{
+  max-width: 1630px;
 }
 
 .information {
@@ -719,6 +721,8 @@ main {
   width: 140px;
   top: 49%;
   left: 145px;
+  cursor: pointer;
+
   p {
     position: absolute;
     left: 150px;
@@ -801,13 +805,18 @@ main {
 
     img {
       width: 45px;
+      transition: transform 0.3s ease-out;
+    }
+
+    &.open img {
+      transform: rotate(180deg);
     }
   }
 
   .toggle-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out; 
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
     padding: 0;
 
     p {
@@ -818,7 +827,7 @@ main {
 
   .toggle-content.open {
     max-height: 500px;
-    padding: 15px 0px; 
+    padding: 15px 0px;
   }
 }
 
@@ -827,5 +836,274 @@ main {
   font-weight: 800;
   color: #340600;
   margin-bottom: 20px;
+}
+//
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+
+.unique-our-projects {
+  margin-left: 80px;
+  padding-bottom: 100px;
+  max-width: 1550px;
+  p {
+    &:first-child {
+      margin: 100px 0px 20px 0px;
+      text-transform: uppercase;
+      font-size: 50px;
+      font-weight: 800;
+      color: #8d2114;
+    }
+  }
+  .unique-carousel {
+    position: relative;
+  }
+
+  .unique-carousel {
+    .unique-carousel-hidden {
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      ul {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 30px;
+        li {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+  .unique-text-description {
+    font-size: 24px;
+    font-weight: 700;
+    color: #340600;
+  }
+
+  .unique-news-location {
+    color: #340600;
+    opacity: 50%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .unique-news-hashtag {
+    color: #340600;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgba(52, 6, 0, 0.1);
+    padding: 5px 17px;
+    max-width: max-content;
+    border-radius: 16px 16px 16px 0px;
+  }
+
+  .unique-news-hashtag-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .unique-carousel {
+    img {
+      max-width: 380px;
+      max-height: 280px;
+    }
+  }
+  .unique-nav-button {
+    position: absolute;
+    height: 66px;
+    width: 66px;
+    margin: 0px 12px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    top: 140px;
+    background-color: var(--project-white);
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .unique-nav-button:hover {
+    transform: scale(1.1);
+    transform: translateY(-50%);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .unique-prev {
+    left: -44px;
+  }
+
+  .unique-next {
+    right: 60px;
+  }
+}
+
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+// 
+
+.extra-our-projects {
+  margin-left: 80px;
+  padding-bottom: 100px;
+  max-width: 1550px;
+  p {
+    &:first-child {
+      margin: 100px 0px 20px 0px;
+      text-transform: uppercase;
+      font-size: 50px;
+      font-weight: 800;
+      color: #8d2114;
+    }
+  }
+  .extra-carousel {
+    position: relative;
+  }
+
+  .extra-carousel {
+    .extra-carousel-hidden {
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      ul {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 30px;
+        li {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+  .extra-text-description {
+    font-size: 24px;
+    font-weight: 700;
+    color: #340600;
+  }
+
+  .extra-news-location {
+    color: #340600;
+    opacity: 50%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .extra-news-hashtag {
+    color: var(--project-white);
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #8D2114;
+    padding: 5px 17px;
+    max-width: max-content;
+    border-radius: 16px 16px 16px 0px;
+  }
+
+  .extra-news-hashtag-box {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .extra-carousel {
+    img {
+      max-width: 380px;
+      max-height: 280px;
+    }
+  }
+  .extra-nav-button {
+    position: absolute;
+    height: 66px;
+    width: 66px;
+    margin: 0px 12px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    top: 140px;
+    background-color: var(--project-white);
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .extra-nav-button:hover {
+    transform: scale(1.1);
+    transform: translateY(-50%);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .extra-prev {
+    left: -44px;
+  }
+
+  .extra-next {
+    right: 60px;
+  }
+}
+
+.our-equipment-list{
+  margin-left: 80px;
+    ul{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+
+      li{
+        max-width: 180px;
+        border: 1.5px rgba(52, 6, 0, 0.12) solid;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+          border-radius: 10px;
+          width: 178px;
+          height: 178px;
+        }
+        p{
+          padding: 20px;
+          font-size: 16px;
+          color: #340600;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+.our-equipment-list-name{
+  font-size: 24px;
+    font-weight: 700;
+    color: #340600;
+    margin-bottom: 20px;
 }
 

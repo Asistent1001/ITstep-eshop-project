@@ -72,7 +72,7 @@ header {
 }
 
 .contact-us-box {
- @include modal-box-style
+  @include modal-box-style;
 }
 
 .contact-us-submit-button {
@@ -106,15 +106,15 @@ header {
   transition: 250ms transform ease-in;
 }
 
-.carousel-section-pictur{
+.carousel-section-pictur {
   object-fit: none;
 }
 
 .carousel-sections > div {
   border-radius: 24px;
-  //   img{
-  //     filter: blur(3px);
-  //   }
+    img{
+      filter: blur(2px);
+    }
 }
 
 .prev-arrow,
@@ -182,11 +182,11 @@ header {
   &::before {
     content: "";
     position: absolute;
-    top: -22px; /* Настройте позиционирование по вашему желанию */
+    top: -22px;
     left: 50%;
     transform: translateX(-50%);
-    width: 26px; /* Ширина SVG */
-    height: 24px; /* Высота SVG */
+    width: 26px;
+    height: 24px;
     background-image: url(../../assets/images/caret-up-solid.svg);
     background-size: cover;
   }
@@ -202,9 +202,13 @@ header {
     color: var(--project-white);
     &:first-child {
       font-size: 24px;
+      font-weight: 700;
     }
     &:last-child {
       font-size: 66px;
+      text-transform: uppercase;
+      font-weight: 900;
     }
   }
 }
+

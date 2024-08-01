@@ -1,0 +1,110 @@
+@media screen and (max-width: 1555px) {
+  .our-equipment-machine-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .our-equipment-sponsorship-list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .our-equipment-sponsor-logo {
+    max-width: 146px;
+  }
+  .inner-text {
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .our-equipment-oven-on-the-left-side {
+    display: none;
+  }
+  .prev-arrow {
+    left: 20px;
+  }
+  .next-arrow {
+    right: 20px;
+  }
+  .prev-arrow,
+  .next-arrow {
+    height: 38px;
+    width: 38px;
+  }
+
+  .our-equipment-machine-list {
+    margin: 20px 20px;
+  }
+  .our-equipment-sponsorship-list {
+    padding: 20px 20px;
+  }
+  .our-equipment-navigation-box {
+    padding: 0px 20px 20px 20px;
+  }
+  .our-equipment-navigation-text {
+    margin-top: 20px;
+  }
+  .inner-text {
+    top: 287px;
+    left: 120px;
+    right: 120px;
+    p {
+      &:first-child {
+        font-size: 24px;
+      }
+      &:last-child {
+        font-size: 50px;
+      }
+    }
+  }
+  main {
+    .company-head-picture {
+      max-height: unset;
+      height: 442px;
+      gap: 20px;
+      justify-content: flex-start;
+      img {
+        max-height: 442px;
+      }
+    }
+    .information-about-company-main-picture {
+      max-height: 430px;
+    }
+    .information-about-company-text {
+      top: 30px;
+      padding: 30px;
+      P {
+        &:first-child {
+          font-size: 40px;
+        }
+      }
+    }
+    .our-projects {
+      padding-bottom: 0px;
+      margin-left: 0;
+      margin: 40px 20px;
+      p {
+        &:first-child {
+          margin: 20px 0px;
+        }
+      }
+      .nav-button {
+        height: 66px;
+        width: 66px;
+        transform: translateY(-50%);
+        top: 140px;
+      }
+
+      .prev {
+        left: -12px;
+      }
+
+      .next {
+        right: 60px;
+      }
+    }
+
+    //
+    //
+    //
+  }
+}

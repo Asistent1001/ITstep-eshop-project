@@ -13,10 +13,6 @@
   color: var(--project-black);
 }
 
-html, body {
-  max-width: 1920px;
-}
-
 li {
   list-style: none;
 }
@@ -201,6 +197,10 @@ header nav div ul li {
 .carousel-sections > div {
   border-radius: 24px;
 }
+.carousel-sections > div img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
 
 .prev-arrow,
 .next-arrow {
@@ -292,12 +292,12 @@ header nav div ul li {
 .carousel-dot.active::before {
   content: "";
   position: absolute;
-  top: -22px; /* Настройте позиционирование по вашему желанию */
+  top: -22px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 26px; /* Ширина SVG */
-  height: 24px; /* Высота SVG */
+  width: 26px;
+  height: 24px;
   background-image: url(../../assets/images/caret-up-solid.svg);
   background-size: cover;
 }
@@ -314,9 +314,12 @@ header nav div ul li {
 }
 .inner-text p:first-child {
   font-size: 24px;
+  font-weight: 700;
 }
 .inner-text p:last-child {
   font-size: 66px;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 main .company-head-information {
@@ -458,7 +461,11 @@ main .information-about-company {
           justify-content: center;
 }
 main .information-about-company-main-picture {
-  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 main .information-about-company-text {
   position: absolute;
@@ -1024,7 +1031,6 @@ main .our-projects .next {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
 }
 .left-side-navigation div {
   min-width: 290px;
@@ -1080,12 +1086,12 @@ main .our-projects .next {
   font-weight: 700;
 }
 
-.butchery-main-div {
-  width: 100%;
-}
-
 .information {
   position: relative;
+}
+
+.butchery-main-div-introduction-picture {
+  max-width: 1630px;
 }
 
 .information {
@@ -1152,6 +1158,7 @@ main .our-projects .next {
   width: 140px;
   top: 49%;
   left: 145px;
+  cursor: pointer;
 }
 .information-butchery-arrow p {
   position: absolute;
@@ -1251,6 +1258,14 @@ main .our-projects .next {
 }
 .solutions-for-business .toggle-section img {
   width: 45px;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+.solutions-for-business .toggle-section.open img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .solutions-for-business .toggle-content {
   max-height: 0;
@@ -1271,6 +1286,297 @@ main .our-projects .next {
 .solutions-for-business-description {
   font-size: 30px;
   font-weight: 800;
+  color: #340600;
+  margin-bottom: 20px;
+}
+
+.unique-our-projects {
+  margin-left: 80px;
+  padding-bottom: 100px;
+  max-width: 1550px;
+}
+.unique-our-projects p:first-child {
+  margin: 100px 0px 20px 0px;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 800;
+  color: #8d2114;
+}
+.unique-our-projects .unique-carousel {
+  position: relative;
+}
+.unique-our-projects .unique-carousel .unique-carousel-hidden {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.unique-our-projects .unique-carousel .unique-carousel-hidden ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  gap: 30px;
+}
+.unique-our-projects .unique-carousel .unique-carousel-hidden ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.unique-our-projects .unique-text-description {
+  font-size: 24px;
+  font-weight: 700;
+  color: #340600;
+}
+.unique-our-projects .unique-news-location {
+  color: #340600;
+  opacity: 50%;
+  font-size: 14px;
+  font-weight: 500;
+}
+.unique-our-projects .unique-news-hashtag {
+  color: #340600;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: rgba(52, 6, 0, 0.1);
+  padding: 5px 17px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border-radius: 16px 16px 16px 0px;
+}
+.unique-our-projects .unique-news-hashtag-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+.unique-our-projects .unique-carousel img {
+  max-width: 380px;
+  max-height: 280px;
+}
+.unique-our-projects .unique-nav-button {
+  position: absolute;
+  height: 66px;
+  width: 66px;
+  margin: 0px 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  top: 140px;
+  background-color: var(--project-white);
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.unique-our-projects .unique-nav-button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.unique-our-projects .unique-prev {
+  left: -44px;
+}
+.unique-our-projects .unique-next {
+  right: 60px;
+}
+
+.extra-our-projects {
+  margin-left: 80px;
+  padding-bottom: 100px;
+  max-width: 1550px;
+}
+.extra-our-projects p:first-child {
+  margin: 100px 0px 20px 0px;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 800;
+  color: #8d2114;
+}
+.extra-our-projects .extra-carousel {
+  position: relative;
+}
+.extra-our-projects .extra-carousel .extra-carousel-hidden {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.extra-our-projects .extra-carousel .extra-carousel-hidden ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  gap: 30px;
+}
+.extra-our-projects .extra-carousel .extra-carousel-hidden ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.extra-our-projects .extra-text-description {
+  font-size: 24px;
+  font-weight: 700;
+  color: #340600;
+}
+.extra-our-projects .extra-news-location {
+  color: #340600;
+  opacity: 50%;
+  font-size: 14px;
+  font-weight: 500;
+}
+.extra-our-projects .extra-news-hashtag {
+  color: var(--project-white);
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #8D2114;
+  padding: 5px 17px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border-radius: 16px 16px 16px 0px;
+}
+.extra-our-projects .extra-news-hashtag-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+}
+.extra-our-projects .extra-carousel img {
+  max-width: 380px;
+  max-height: 280px;
+}
+.extra-our-projects .extra-nav-button {
+  position: absolute;
+  height: 66px;
+  width: 66px;
+  margin: 0px 12px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  top: 140px;
+  background-color: var(--project-white);
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.extra-our-projects .extra-nav-button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.extra-our-projects .extra-prev {
+  left: -44px;
+}
+.extra-our-projects .extra-next {
+  right: 60px;
+}
+
+.our-equipment-list {
+  margin-left: 80px;
+}
+.our-equipment-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.our-equipment-list ul li {
+  max-width: 180px;
+  border: 1.5px rgba(52, 6, 0, 0.12) solid;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.our-equipment-list ul li img {
+  border-radius: 10px;
+  width: 178px;
+  height: 178px;
+}
+.our-equipment-list ul li p {
+  padding: 20px;
+  font-size: 16px;
+  color: #340600;
+  font-weight: 400;
+}
+
+.our-equipment-list-name {
+  font-size: 24px;
+  font-weight: 700;
   color: #340600;
   margin-bottom: 20px;
 }
@@ -1391,4 +1697,101 @@ main .our-projects .next {
 .footer-informations-text-decoration {
   text-decoration: underline;
   text-decoration-color: var(--project-white);
+}
+
+@media screen and (max-width: 1555px) {
+  .our-equipment-machine-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .our-equipment-sponsorship-list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .our-equipment-sponsor-logo {
+    max-width: 146px;
+  }
+  .inner-text {
+    top: 200px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .our-equipment-oven-on-the-left-side {
+    display: none;
+  }
+  .prev-arrow {
+    left: 20px;
+  }
+  .next-arrow {
+    right: 20px;
+  }
+  .prev-arrow,
+  .next-arrow {
+    height: 38px;
+    width: 38px;
+  }
+  .our-equipment-machine-list {
+    margin: 20px 20px;
+  }
+  .our-equipment-sponsorship-list {
+    padding: 20px 20px;
+  }
+  .our-equipment-navigation-box {
+    padding: 0px 20px 20px 20px;
+  }
+  .our-equipment-navigation-text {
+    margin-top: 20px;
+  }
+  .inner-text {
+    top: 287px;
+    left: 120px;
+    right: 120px;
+  }
+  .inner-text p:first-child {
+    font-size: 24px;
+  }
+  .inner-text p:last-child {
+    font-size: 50px;
+  }
+  main .company-head-picture {
+    max-height: unset;
+    height: 442px;
+    gap: 20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  main .company-head-picture img {
+    max-height: 442px;
+  }
+  main .information-about-company-main-picture {
+    max-height: 430px;
+  }
+  main .information-about-company-text {
+    top: 30px;
+    padding: 30px;
+  }
+  main .information-about-company-text P:first-child {
+    font-size: 40px;
+  }
+  main .our-projects {
+    padding-bottom: 0px;
+    margin-left: 0;
+    margin: 40px 20px;
+  }
+  main .our-projects p:first-child {
+    margin: 20px 0px;
+  }
+  main .our-projects .nav-button {
+    height: 66px;
+    width: 66px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    top: 140px;
+  }
+  main .our-projects .prev {
+    left: -12px;
+  }
+  main .our-projects .next {
+    right: 60px;
+  }
 }
