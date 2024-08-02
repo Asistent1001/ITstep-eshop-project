@@ -3,7 +3,13 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
-
+  .our-equipment-oven-on-the-left-side {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    bottom: unset;
+  }
   .our-equipment-sponsorship-list {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -56,55 +62,29 @@
       }
     }
   }
+
+
   main {
-    .company-head-picture {
-      max-height: unset;
-      height: 442px;
-      gap: 20px;
-      justify-content: flex-start;
-      img {
+    .company-head-information {
+      justify-content: space-between;
+      gap: 0px;
+      padding: 0 20px;
+      .company-head-picture {
         max-height: 442px;
-      }
-    }
-    .information-about-company-main-picture {
-      max-height: 430px;
-    }
-    .information-about-company-text {
-      top: 30px;
-      padding: 30px;
-      P {
-        &:first-child {
-          font-size: 40px;
+
+        img{
+          max-height: 442px;
+
         }
       }
     }
-    .our-projects {
-      padding-bottom: 0px;
-      margin-left: 0;
-      margin: 40px 20px;
-      p {
-        &:first-child {
-          margin: 20px 0px;
-        }
-      }
-      .nav-button {
-        height: 66px;
-        width: 66px;
-        transform: translateY(-50%);
-        top: 140px;
-      }
-
-      .prev {
-        left: -12px;
-      }
-
-      .next {
-        right: 60px;
+    .company-head-text{
+      margin-left: -40px;
+      p{
+        max-width: 550px;
       }
     }
 
-    //
-    //
-    //
+
   }
 }
