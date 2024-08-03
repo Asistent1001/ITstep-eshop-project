@@ -16,47 +16,65 @@
 
   <body>
     <header>
-      <nav>
-        <div class="nav-section-height">
-          <a href="./index.html"
-            ><img src="./assets/images/logo.png" alt="logo"
-          /></a>
+      <div class="header-box">
+        <div class="header-logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.png" alt="logo" />
+          </a>
         </div>
-        <div class="nav-section-height">
-          <ul>
-            <li><a href="./butchery.html">Решения</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Наши проекты</a></li>
-            <li><a href="#">Мероприятия</a></li>
-            <li><a href="#">Оборудование</a></li>
-            <li><a href="#">О нас</a></li>
-          </ul>
-        </div>
-        <div class="contact-us-popover-box">
-          <button class="modal-button" popovertarget="contact-us">
-            свяжитесь с нами
-          </button>
-          <div class="contact-us-box" id="contact-us" popover>
-            <form>
-              <label>
-                <span>Имя</span>
-                <input type="text" required />
-              </label>
-              <label>
-                <span>Фамилия</span>
-                <input type="text" required />
-              </label>
-              <label>
-                <span>Номер телефона</span>
-                <input type="number" required />
-              </label>
-              <div class="contact-us-submit-button">
-                <input type="submit" value="Связаться" />
-              </div>
-            </form>
+        <div class="navigation-list-box">
+          <div class="navigation-list-burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+          <nav>
+            <ul class="navigation-list">
+              <li><a href="./butchery.html">Решения</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Наши проекты</a></li>
+              <li><a href="#">Мероприятия</a></li>
+              <li><a href="#">Оборудование</a></li>
+              <li><a href="#">О нас</a></li>
+            </ul>
+          </nav>
         </div>
-      </nav>
+        <button class="modal-button" popovertarget="contact-us">
+          Свяжитесь с нами
+        </button>
+      </div>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <div class="contact-us-popover-box">
+        <div class="contact-us-box" id="contact-us" popover>
+          <form>
+            <label>
+              <span>Имя</span>
+              <input type="text" required />
+            </label>
+            <label>
+              <span>Фамилия</span>
+              <input type="text" required />
+            </label>
+            <label>
+              <span>Номер телефона</span>
+              <input type="number" required />
+            </label>
+            <div class="contact-us-submit-button">
+              <input type="submit" value="Связаться" />
+            </div>
+          </form>
+        </div>
+      </div>
+      
     </header>
     <main class="butchery-main">
       <aside>
@@ -249,11 +267,13 @@
           </div>
         </div>
         <div class="butchery-our-projects">
-          <div class="main-carousel-arrow arrow-left">
-            <i class="fa-solid fa-chevron-left"></i>
-          </div>
-          <div class="main-carousel-arrow arrow-right">
-            <i class="fa-solid fa-chevron-right"></i>
+          <div class="main-carousel-arrow-box">
+            <div class="main-carousel-arrow arrow-left">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="main-carousel-arrow arrow-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
           </div>
           <p class="our-projects-title">Наши проекты</p>
           <ul class="main-carousel-box">
@@ -430,11 +450,13 @@
           </ul>
         </div>
         <div class="butchery-our-events">
-          <div class="main-carousel-arrow arrow-left">
-            <i class="fa-solid fa-chevron-left"></i>
-          </div>
-          <div class="main-carousel-arrow arrow-right">
-            <i class="fa-solid fa-chevron-right"></i>
+          <div class="main-carousel-arrow-box">
+            <div class="main-carousel-arrow arrow-left">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="main-carousel-arrow arrow-right">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
           </div>
           <p class="our-projects-title">Наши проекты</p>
           <ul class="main-carousel-box">

@@ -40,7 +40,7 @@ main {
     position: absolute;
     opacity: 90%;
     top: -10px;
-    right: -20px;
+    right: -30px;
   }
 
   .ask-your-question-modal-button {
@@ -308,25 +308,32 @@ main {
 //
 
 .our-events,
-.our-projects {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin: 100px 0px 100px 370px;
-  gap: 30px;
-}
-
+.our-projects,
 .butchery-our-events,
 .butchery-our-projects {
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 100px 0px 100px 0px;
   gap: 30px;
+}
+
+.our-events,
+.our-projects {
+  margin: 100px 0px 100px 370px;
+  position: relative;
+}
+
+.butchery-our-events,
+.butchery-our-projects {
+  margin: 100px 0px 100px 80px;
 }
 
 .our-projects-title {
   @include font-properties(800, 50, #8d2114);
+}
+
+.main-carousel-box-box {
+  overflow: hidden;
 }
 
 .main-carousel-box {
@@ -338,6 +345,11 @@ main {
   width: 100%;
 }
 
+// .main-carousel-arrow-box {
+//   max-width: 1180px;
+//   position: relative;
+// }
+
 .main-carousel-arrow {
   transition: all 200ms;
   position: absolute;
@@ -345,7 +357,7 @@ main {
   width: 66px;
   height: 66px;
   border-radius: 50%;
-  top: 190px;
+  top: 237.5px;
   z-index: 100;
   display: flex;
   align-items: center;
@@ -360,7 +372,7 @@ main {
 }
 
 .arrow-right {
-  left: 1147px;
+  right: 370px;
 }
 
 .main-carousel-item {
@@ -380,14 +392,14 @@ main {
 }
 
 .main-carousel-hashtag-box,
-.main-carousel-date-box  {
+.main-carousel-date-box {
   background-color: rgba(52, 6, 0, 0.1);
   border-radius: 16px 16px 16px 0px;
   padding: 6px 18px;
   width: fit-content;
 }
 
-.main-carousel-hashtag-box-box{
+.main-carousel-hashtag-box-box {
   display: flex;
   flex-direction: row;
   align-items: center;

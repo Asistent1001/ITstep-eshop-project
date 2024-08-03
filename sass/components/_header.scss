@@ -2,25 +2,30 @@
   margin: auto;
   border: 3px solid #79271b;
   border-radius: 10px;
+
   form {
     display: flex;
     flex-direction: column;
     margin: 70px;
     gap: 30px;
+
     label {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 30px;
+
       span {
         font-size: 25px;
       }
+
       input {
         padding: 10px;
         background-color: #79271b;
         border-radius: 8px;
         color: #fdeedf;
       }
+
       textarea {
         padding: 10px;
         background-color: #79271b;
@@ -31,48 +36,79 @@
   }
 }
 
-header {
-  nav {
-    background-color: #79271b;
+//
+//
+//
+//
+//
+//
+
+.header-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-height: 80px;
+  background-color: #79271b;
+}
+
+.header-logo {
+  max-height: 80px;
+
+  img {
     max-height: 80px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    div {
-      img {
-        max-height: 80px;
-      }
-      button {
-        color: var(--project-white);
-        text-transform: uppercase;
-        border: 2px solid var(--project-white);
-        border-radius: 8px;
-        padding: 5px;
-        cursor: pointer;
-      }
-      ul {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 30px;
-        li {
-          color: var(--project-white);
-          font-size: 15px;
-          text-transform: uppercase;
-        }
-      }
-    }
   }
 }
 
-.nav-section-height {
-  max-height: 80px;
+.navigation-list-burger-menu {
+  display: none;
+  flex-direction: column;
+  width: 30px;
+  padding: 30px;
+  cursor: pointer;
+  span {
+    height: 3px;
+    background-color: var(--project-white);
+    margin: 5px 0;
+  }
 }
+
+.navigation-list {
+  li {
+    color: var(--project-white);
+    background-color: #79271b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+    }
+  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+//
+//
+//
+//
+//
+//
+//
 
 .contact-us-box {
   @include modal-box-style;
+}
+
+.modal-button {
+  color: var(--project-white);
+  border: 2px solid var(--project-white);
+  padding: 5px 10px;
+  border-radius: 10px;
 }
 
 .contact-us-submit-button {
@@ -101,6 +137,7 @@ header {
   overflow: hidden;
   max-height: 739px;
 }
+
 .carousel-sections {
   display: flex;
   transition: 250ms transform ease-in;
@@ -112,9 +149,10 @@ header {
 
 .carousel-sections > div {
   border-radius: 24px;
-    img{
-      filter: blur(2px);
-    }
+
+  img {
+    filter: blur(2px);
+  }
 }
 
 .prev-arrow,
@@ -136,6 +174,7 @@ header {
 .prev-arrow {
   left: 10%;
 }
+
 .next-arrow {
   right: 10%;
 }
@@ -168,17 +207,21 @@ header {
   cursor: pointer;
   border-radius: 5px;
   transition: 100ms background-color ease-in;
+
   p {
     color: #fdeedf;
     padding: 5px;
   }
+
   img {
     padding-left: 15px;
   }
 }
+
 .carousel-dot.active {
   position: relative;
   background-color: #340600;
+
   &::before {
     content: "";
     position: absolute;
@@ -197,18 +240,50 @@ header {
   top: 287px;
   left: 370px;
   right: 370px;
+
   p {
-    font-weight: bold;
-    color: var(--project-white);
     &:first-child {
-      font-size: 24px;
-      font-weight: 700;
+      @include font-properties(700, 24, var(--project-white));
     }
+
     &:last-child {
-      font-size: 66px;
+      @include font-properties(900, 66, var(--project-white));
       text-transform: uppercase;
-      font-weight: 900;
     }
   }
 }
 
+.different-business-areas{
+  display: none;
+  flex-direction: column;
+  margin: 40px 20px;
+}
+
+.different-business-areas-title{
+  @include font-properties(900, 30, #79271B);
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+
+.different-business-areas-box{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.different-business-areas-box-for-two{
+  display: flex;
+  flex-direction: row;
+  gap: 140px;
+}
+
+.different-business-areas-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  p{
+    @include font-properties(600, 16, #79271B) ;
+    max-width: 200px;
+  }
+}

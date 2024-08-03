@@ -15,20 +15,18 @@
 }
 
 .about-us-question-modal-button {
+  @include font-properties(700, 18, #340600);
   background-color: #ffb734;
   border-radius: 8px;
-  font-size: 18px;
   padding: 18px 34px;
-  font-size: 18px;
-  font-weight: 700;
 }
 
 .about-us-media {
-    max-width: 700px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   div {
     p,
     span {
@@ -41,39 +39,51 @@
   }
 }
 
-.about-us-media-icons{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-    div{
-        max-width: 40px;
-    }
+.about-us-media-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  div {
+    max-width: 40px;
+  }
 }
 
-.footer-informations{
-    padding: 20px;
-    background-color: #79271b;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    p{
-        color: var(--project-white);
-
-    }
+.footer-informations {
+  padding: 20px;
+  background-color: #79271b;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  p {
+    color: var(--project-white);
+  }
 }
 
-.footer-informations-aling{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 90px;
+.footer-informations-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 90px;
 }
 
-.footer-informations-text-decoration{
-    text-decoration: underline;
-    text-decoration-color: var(--project-white);
+.footer-informations-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
+.footer-informations-item-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 90px;
+}
+
+.footer-informations-item-decoration {
+  text-decoration: underline;
+  text-decoration-color: var(--project-white);
+  color: var(--project-white);
+}

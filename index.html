@@ -16,47 +16,54 @@
 
   <body>
     <header>
-      <nav>
-        <div class="nav-section-height">
-          <a href="./index.html"
-            ><img src="./assets/images/logo.png" alt="logo"
-          /></a>
+      <div class="header-box">
+        <div class="header-logo">
+          <a href="./index.html">
+            <img src="./assets/images/logo.png" alt="logo" />
+          </a>
         </div>
-        <div class="nav-section-height">
-          <ul>
-            <li><a href="./butchery.html">Решения</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Наши проекты</a></li>
-            <li><a href="#">Мероприятия</a></li>
-            <li><a href="#">Оборудование</a></li>
-            <li><a href="#">О нас</a></li>
-          </ul>
-        </div>
-        <div class="contact-us-popover-box">
-          <button class="modal-button" popovertarget="contact-us">
-            свяжитесь с нами
-          </button>
-          <div class="contact-us-box" id="contact-us" popover>
-            <form>
-              <label>
-                <span>Имя</span>
-                <input type="text" required />
-              </label>
-              <label>
-                <span>Фамилия</span>
-                <input type="text" required />
-              </label>
-              <label>
-                <span>Номер телефона</span>
-                <input type="number" required />
-              </label>
-              <div class="contact-us-submit-button">
-                <input type="submit" value="Связаться" />
-              </div>
-            </form>
+        <div class="navigation-list-box">
+          <div class="navigation-list-burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+          <nav>
+            <ul class="navigation-list">
+              <li><a href="./butchery.html">Решения</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Наши проекты</a></li>
+              <li><a href="#">Мероприятия</a></li>
+              <li><a href="#">Оборудование</a></li>
+              <li><a href="#">О нас</a></li>
+            </ul>
+          </nav>
         </div>
-      </nav>
+        <button class="modal-button" popovertarget="contact-us">
+          Свяжитесь с нами
+        </button>
+      </div>
+      <div class="contact-us-popover-box">
+        <div class="contact-us-box" id="contact-us" popover>
+          <form>
+            <label>
+              <span>Имя</span>
+              <input type="text" required />
+            </label>
+            <label>
+              <span>Фамилия</span>
+              <input type="text" required />
+            </label>
+            <label>
+              <span>Номер телефона</span>
+              <input type="number" required />
+            </label>
+            <div class="contact-us-submit-button">
+              <input type="submit" value="Связаться" />
+            </div>
+          </form>
+        </div>
+      </div>
       <div class="carousel-box" id="app">
         <div class="carousel">
           <div class="prev-arrow"><i class="fa-solid fa-chevron-left"></i></div>
@@ -120,6 +127,38 @@
             <img src="./assets/images/icon-food.png" alt="icon-food" />
             <p>Рестораны и кафе</p>
           </div>
+        </div>
+      </div>
+      <div class="different-business-areas">
+        <p class="different-business-areas-title">
+          решения для разных сфер бизнеса
+        </p>
+        <div class="different-business-areas-box">
+          <div class="different-business-areas-box-for-two">
+            <div class="different-business-areas-item">
+              <img src="./assets/images/icon-shop-cinnamon.png" alt="shop-icon" />
+              <p>Сетевые магазины и фирменная торговля</p>
+            </div>
+            <div class="different-business-areas-item">
+              <img
+                src="./assets/images/icon-pretzel-cinnamon.png"
+                alt="pretzel-icon"
+              />
+              <p>Пекарня и кондитерские</p>
+            </div>
+          </div>
+  
+          <div class="different-business-areas-box-for-two">
+            <div class="different-business-areas-item">
+              <img src="./assets/images/icon-pot-cinnamon.png" alt="pot-icon" />
+              <p>Мясные цеха и кулинария</p>
+            </div>
+            <div class="different-business-areas-item">
+              <img src="./assets/images/icon-food-cinnamon.png" alt="food-icon" />
+              <p>Рестораны и кафе</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </header>
@@ -236,166 +275,175 @@
         </div>
       </div>
       <div class="our-projects">
-        <div class="main-carousel-arrow arrow-left">
-          <i class="fa-solid fa-chevron-left"></i>
-        </div>
-        <div class="main-carousel-arrow arrow-right">
-          <i class="fa-solid fa-chevron-right"></i>
+        <div class="main-carousel-arrow-box">
+          <div class="main-carousel-arrow arrow-left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="main-carousel-arrow arrow-right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
         </div>
         <p class="our-projects-title">Наши проекты</p>
-        <ul class="main-carousel-box">
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img
-                class="main-carousel-img"
-                src="./assets/images/fresh-bread.png"
-                alt="fresh-bread"
-              />
-            </div>
-            <p class="main-carousel-title">Расширение ассортимента пекарни</p>
-            <p class="main-carousel-place">г. Благовещенск</p>
-            <div class="main-carousel-hashtag-box">
-              <p class="main-carousel-hashtag">Пекарня</p>
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img
-                class="main-carousel-img"
-                src="./assets/images/fish-on-the-shelf.png"
-                alt="fish-on-the-shelf"
-              />
-            </div>
-            <p class="main-carousel-title">
-              Оснащение продуктового магазина, рыба холодного копчения
-            </p>
-            <p class="main-carousel-place">Сеть супермаркетов "Перекрёсток"</p>
-            <div class="main-carousel-hashtag-box">
-              <p class="main-carousel-hashtag">Магазины</p>
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img
-                class="main-carousel-img"
-                src="./assets/images/bread-on-the-shelf.png"
-                alt="bread-on-the-shelf"
-              />
-            </div>
-            <p class="main-carousel-title">
-              Оснащение пекарни, хлеба на живой закваске
-            </p>
-            <p class="main-carousel-place">Сеть супермаркетов "Яблоко", Крым</p>
-            <div class="main-carousel-hashtag-box-box">
+        <div class="main-carousel-box-box">
+          <ul class="main-carousel-box">
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/fresh-bread.png"
+                  alt="fresh-bread"
+                />
+              </div>
+              <p class="main-carousel-title">Расширение ассортимента пекарни</p>
+              <p class="main-carousel-place">г. Благовещенск</p>
               <div class="main-carousel-hashtag-box">
                 <p class="main-carousel-hashtag">Пекарня</p>
               </div>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/fish-on-the-shelf.png"
+                  alt="fish-on-the-shelf"
+                />
+              </div>
+              <p class="main-carousel-title">
+                Оснащение продуктового магазина, рыба холодного копчения
+              </p>
+              <p class="main-carousel-place">
+                Сеть супермаркетов "Перекрёсток"
+              </p>
               <div class="main-carousel-hashtag-box">
                 <p class="main-carousel-hashtag">Магазины</p>
               </div>
-
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img
-                class="main-carousel-img"
-                src="./assets/images/man-baking-bread.png"
-                alt="man-baking-bread"
-              />
-            </div>
-            <p class="main-carousel-title">
-              Комплексное оснащение пекарни, ржаные и заварные хлеба
-            </p>
-            <p class="main-carousel-place">
-              Сеть удобных магазинов "Титан", г. Улан-Удэ
-            </p>
-            <div class="main-carousel-hashtag-box-box">
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/bread-on-the-shelf.png"
+                  alt="bread-on-the-shelf"
+                />
+              </div>
+              <p class="main-carousel-title">
+                Оснащение пекарни, хлеба на живой закваске
+              </p>
+              <p class="main-carousel-place">
+                Сеть супермаркетов "Яблоко", Крым
+              </p>
+              <div class="main-carousel-hashtag-box-box">
+                <div class="main-carousel-hashtag-box">
+                  <p class="main-carousel-hashtag">Пекарня</p>
+                </div>
+                <div class="main-carousel-hashtag-box">
+                  <p class="main-carousel-hashtag">Магазины</p>
+                </div>
+              </div>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/man-baking-bread.png"
+                  alt="man-baking-bread"
+                />
+              </div>
+              <p class="main-carousel-title">
+                Комплексное оснащение пекарни, ржаные и заварные хлеба
+              </p>
+              <p class="main-carousel-place">
+                Сеть удобных магазинов "Титан", г. Улан-Удэ
+              </p>
+              <div class="main-carousel-hashtag-box-box">
+                <div class="main-carousel-hashtag-box">
+                  <p class="main-carousel-hashtag">Пекарня</p>
+                </div>
+                <div class="main-carousel-hashtag-box">
+                  <p class="main-carousel-hashtag">Магазины</p>
+                </div>
+              </div>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/fresh-bread.png"
+                  alt="fresh-bread"
+                />
+              </div>
+              <p class="main-carousel-title">Расширение ассортимента пекарни</p>
+              <p class="main-carousel-place">г. Благовещенск</p>
               <div class="main-carousel-hashtag-box">
                 <p class="main-carousel-hashtag">Пекарня</p>
               </div>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/fish-on-the-shelf.png"
+                  alt="fish-on-the-shelf"
+                />
+              </div>
+              <p class="main-carousel-title">
+                Оснащение продуктового магазина, рыба холодного копчения
+              </p>
+              <p class="main-carousel-place">
+                Сеть супермаркетов "Перекрёсток"
+              </p>
               <div class="main-carousel-hashtag-box">
                 <p class="main-carousel-hashtag">Магазины</p>
               </div>
-
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img
-                class="main-carousel-img"
-                src="./assets/images/fresh-bread.png"
-                alt="fresh-bread"
-              />
-            </div>
-            <p class="main-carousel-title">Расширение ассортимента пекарни</p>
-            <p class="main-carousel-place">г. Благовещенск</p>
-            <div class="main-carousel-hashtag-box">
-              <p class="main-carousel-hashtag">Пекарня</p>
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img
-                class="main-carousel-img"
-                src="./assets/images/fish-on-the-shelf.png"
-                alt="fish-on-the-shelf"
-              />
-            </div>
-            <p class="main-carousel-title">
-              Оснащение продуктового магазина, рыба холодного копчения
-            </p>
-            <p class="main-carousel-place">Сеть супермаркетов "Перекрёсток"</p>
-            <div class="main-carousel-hashtag-box">
-              <p class="main-carousel-hashtag">Магазины</p>
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img
-                class="main-carousel-img"
-                src="./assets/images/bread-on-the-shelf.png"
-                alt="bread-on-the-shelf"
-              />
-            </div>
-            <p class="main-carousel-title">
-              Оснащение пекарни, хлеба на живой закваске
-            </p>
-            <p class="main-carousel-place">Сеть супермаркетов "Яблоко", Крым</p>
-            <div class="main-carousel-hashtag-box-box">
-              <div class="main-carousel-hashtag-box">
-                <p class="main-carousel-hashtag">Пекарня</p>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/bread-on-the-shelf.png"
+                  alt="bread-on-the-shelf"
+                />
               </div>
-              <div class="main-carousel-hashtag-box">
-                <p class="main-carousel-hashtag">Магазины</p>
+              <p class="main-carousel-title">
+                Оснащение пекарни, хлеба на живой закваске
+              </p>
+              <p class="main-carousel-place">
+                Сеть супермаркетов "Яблоко", Крым
+              </p>
+              <div class="main-carousel-hashtag-box-box">
+                <div class="main-carousel-hashtag-box">
+                  <p class="main-carousel-hashtag">Пекарня</p>
+                </div>
+                <div class="main-carousel-hashtag-box">
+                  <p class="main-carousel-hashtag">Магазины</p>
+                </div>
               </div>
-
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img
-                class="main-carousel-img"
-                src="./assets/images/man-baking-bread.png"
-                alt="man-baking-bread"
-              />
-            </div>
-            <p class="main-carousel-title">
-              Комплексное оснащение пекарни, ржаные и заварные хлеба
-            </p>
-            <p class="main-carousel-place">
-              Сеть удобных магазинов "Титан", г. Улан-Удэ
-            </p>
-            <div class="main-carousel-hashtag-box-box">
-              <div class="main-carousel-hashtag-box">
-                <p class="main-carousel-hashtag">Пекарня</p>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/man-baking-bread.png"
+                  alt="man-baking-bread"
+                />
               </div>
-              <div class="main-carousel-hashtag-box">
-                <p class="main-carousel-hashtag">Магазины</p>
+              <p class="main-carousel-title">
+                Комплексное оснащение пекарни, ржаные и заварные хлеба
+              </p>
+              <p class="main-carousel-place">
+                Сеть удобных магазинов "Титан", г. Улан-Удэ
+              </p>
+              <div class="main-carousel-hashtag-box-box">
+                <div class="main-carousel-hashtag-box">
+                  <p class="main-carousel-hashtag">Пекарня</p>
+                </div>
+                <div class="main-carousel-hashtag-box">
+                  <p class="main-carousel-hashtag">Магазины</p>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="our-equipment">
         <div class="our-equipment-navigation-box">
@@ -516,111 +564,159 @@
           />
         </div>
       </div>
+
       <div class="our-events">
-        <div class="main-carousel-arrow arrow-left">
-          <i class="fa-solid fa-chevron-left"></i>
-        </div>
-        <div class="main-carousel-arrow arrow-right">
-          <i class="fa-solid fa-chevron-right"></i>
+        <div class="main-carousel-arrow-box">
+          <div class="main-carousel-arrow arrow-left">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="main-carousel-arrow arrow-right">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
         </div>
         <p class="our-projects-title">Наши проекты</p>
-        <ul class="main-carousel-box">
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img class="main-carousel-img" src="./assets/images/roast-ribs.png" alt="roast-ribs" />
-            </div>
-            <p class="main-carousel-title">Расширение ассортимента пекарни</p>
-            <p class="main-carousel-place">г. Благовещенск</p>
-            <div class="main-carousel-date-box">
-              <p class="main-carousel-date">Пекарня</p>
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img class="main-carousel-img" src="./assets/images/piece-of-cake-with-fruit.png" alt="piece-of-cake-with-fruit" />
-            </div>
-            <p class="main-carousel-title">
-              Оснащение продуктового магазина, рыба холодного копчения
-            </p>
-            <p class="main-carousel-place">Сеть супермаркетов "Перекрёсток"</p>
-            <div class="main-carousel-date-box">
-              <p class="main-carousel-date">Пекарня</p>
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img class="main-carousel-img" src="./assets/images/beef-jerky.png" alt="beef-jerky" />
-            </div>
-            <p class="main-carousel-title">Оснащение пекарни, хлеба на живой закваске</p>
-            <p class="main-carousel-place">Сеть супермаркетов "Яблоко", Крым</p>
-            <div class="main-carousel-date-box">
-              <p class="main-carousel-date">Пекарня</p>
-            </div>
-            
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img class="main-carousel-img" src="./assets/images/fresh-eclair.png" alt="fresh-eclair" />
-            </div>
-            <p class="main-carousel-title">
-              Комплексное оснащение пекарни, ржаные и заварные хлеба
-            </p>
-            <p class="main-carousel-place">
-              Сеть удобных магазинов "Титан", г. Улан-Удэ
-            </p>
-            <div class="main-carousel-date-box">
-              <p class="main-carousel-date">Пекарня</p>
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img class="main-carousel-img" src="./assets/images/roast-ribs.png" alt="roast-ribs" />
-            </div>
-            <p class="main-carousel-title">Расширение ассортимента пекарни</p>
-            <p class="main-carousel-place">г. Благовещенск</p>
-            <div class="main-carousel-date-box">
-              <p class="main-carousel-date">Пекарня</p>
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img class="main-carousel-img" src="./assets/images/piece-of-cake-with-fruit.png" alt="piece-of-cake-with-fruit" />
-            </div>
-            <p class="main-carousel-title">
-              Оснащение продуктового магазина, рыба холодного копчения
-            </p>
-            <p class="main-carousel-place">Сеть супермаркетов "Перекрёсток"</p>
-            <div class="main-carousel-date-box">
-              <p class="main-carousel-date">Пекарня</p>
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img class="main-carousel-img" src="./assets/images/beef-jerky.png" alt="beef-jerky" />
-            </div>
-            <p class="main-carousel-title">Оснащение пекарни, хлеба на живой закваске</p>
-            <p class="main-carousel-place">Сеть супермаркетов "Яблоко", Крым</p>
-            <div class="main-carousel-date-box">
-              <p class="main-carousel-date">Пекарня</p>
-            </div>
-          </li>
-          <li class="main-carousel-item">
-            <div class="main-carousel-img-box">
-              <img class="main-carousel-img" src="./assets/images/fresh-eclair.png" alt="fresh-eclair" />
-            </div>
-            <p class="main-carousel-title">
-              Комплексное оснащение пекарни, ржаные и заварные хлеба
-            </p>
-            <p class="main-carousel-place">
-              Сеть удобных магазинов "Титан", г. Улан-Удэ
-            </p>
-            <div class="main-carousel-date-box">
-              <p class="main-carousel-date">Пекарня</p>
-            </div>
-          </ли>
-        </ul>
+
+        <div class="main-carousel-box-box">
+          <ul class="main-carousel-box">
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/roast-ribs.png"
+                  alt="roast-ribs"
+                />
+              </div>
+              <p class="main-carousel-title">Расширение ассортимента пекарни</p>
+              <p class="main-carousel-place">г. Благовещенск</p>
+              <div class="main-carousel-date-box">
+                <p class="main-carousel-date">Пекарня</p>
+              </div>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/piece-of-cake-with-fruit.png"
+                  alt="piece-of-cake-with-fruit"
+                />
+              </div>
+              <p class="main-carousel-title">
+                Оснащение продуктового магазина, рыба холодного копчения
+              </p>
+              <p class="main-carousel-place">
+                Сеть супермаркетов "Перекрёсток"
+              </p>
+              <div class="main-carousel-date-box">
+                <p class="main-carousel-date">Пекарня</p>
+              </div>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/beef-jerky.png"
+                  alt="beef-jerky"
+                />
+              </div>
+              <p class="main-carousel-title">
+                Оснащение пекарни, хлеба на живой закваске
+              </p>
+              <p class="main-carousel-place">
+                Сеть супермаркетов "Яблоко", Крым
+              </p>
+              <div class="main-carousel-date-box">
+                <p class="main-carousel-date">Пекарня</p>
+              </div>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/fresh-eclair.png"
+                  alt="fresh-eclair"
+                />
+              </div>
+              <p class="main-carousel-title">
+                Комплексное оснащение пекарни, ржаные и заварные хлеба
+              </p>
+              <p class="main-carousel-place">
+                Сеть удобных магазинов "Титан", г. Улан-Удэ
+              </p>
+              <div class="main-carousel-date-box">
+                <p class="main-carousel-date">Пекарня</p>
+              </div>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/roast-ribs.png"
+                  alt="roast-ribs"
+                />
+              </div>
+              <p class="main-carousel-title">Расширение ассортимента пекарни</p>
+              <p class="main-carousel-place">г. Благовещенск</p>
+              <div class="main-carousel-date-box">
+                <p class="main-carousel-date">Пекарня</p>
+              </div>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/piece-of-cake-with-fruit.png"
+                  alt="piece-of-cake-with-fruit"
+                />
+              </div>
+              <p class="main-carousel-title">
+                Оснащение продуктового магазина, рыба холодного копчения
+              </p>
+              <p class="main-carousel-place">
+                Сеть супермаркетов "Перекрёсток"
+              </p>
+              <div class="main-carousel-date-box">
+                <p class="main-carousel-date">Пекарня</p>
+              </div>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/beef-jerky.png"
+                  alt="beef-jerky"
+                />
+              </div>
+              <p class="main-carousel-title">
+                Оснащение пекарни, хлеба на живой закваске
+              </p>
+              <p class="main-carousel-place">
+                Сеть супермаркетов "Яблоко", Крым
+              </p>
+              <div class="main-carousel-date-box">
+                <p class="main-carousel-date">Пекарня</p>
+              </div>
+            </li>
+            <li class="main-carousel-item">
+              <div class="main-carousel-img-box">
+                <img
+                  class="main-carousel-img"
+                  src="./assets/images/fresh-eclair.png"
+                  alt="fresh-eclair"
+                />
+              </div>
+              <p class="main-carousel-title">
+                Комплексное оснащение пекарни, ржаные и заварные хлеба
+              </p>
+              <p class="main-carousel-place">
+                Сеть удобных магазинов "Титан", г. Улан-Удэ
+              </p>
+              <div class="main-carousel-date-box">
+                <p class="main-carousel-date">Пекарня</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    
     </main>
     <footer>
       <div class="about-us">
@@ -662,28 +758,32 @@
         </div>
       </div>
       <div class="footer-informations">
-        <div class="footer-informations-aling">
-          <div class="footer-informations-aling">
+        <div class="footer-informations-box">
+          <div class="footer-informations-item">
             <p>&#169; ООО &laquo;НХЛ-Ритейл&raquo;, 2022</p>
           </div>
-          <div class="footer-informations-aling">
+          <div class="footer-informations-item">
             <p>г. Нижний Новгород, ул. Свободы, д. 63</p>
           </div>
-          <div class="footer-informations-aling">
+          <div class="footer-informations-item-box">
             <div
-              class="footer-informations-aling footer-informations-text-decoration"
+              class="footer-informations-item footer-informations-item-decoration"
             >
               <p>retail@nizhhleb.ru</p>
             </div>
             <div
-              class="footer-informations-aling footer-informations-text-decoration"
+              class="footer-informations-item footer-informations-item-decoration"
             >
               <p>Политика конфиденциальности</p>
             </div>
           </div>
         </div>
-        <div class="footer-informations-aling">
-          <p>Сделано в &laquo;Воздухе&raquo;</p>
+        <div class="footer-informations-item">
+          <p>
+            Сделано в &laquo;<span class="footer-informations-item-decoration"
+              >Воздухе</span
+            >&raquo;
+          </p>
         </div>
       </div>
     </footer>
