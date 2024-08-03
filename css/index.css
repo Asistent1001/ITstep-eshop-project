@@ -777,7 +777,7 @@ main .information-about-company-video-popover .information-about-company-video-b
 
 .our-equipment-machine-list {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 180px);
   gap: 20px;
   background-color: #ffffff;
   margin-left: 370px;
@@ -809,27 +809,12 @@ main .information-about-company-video-popover .information-about-company-video-b
 .our-equipment-sponsorship-list {
   background-color: #ffefdf;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 180px);
   padding: 20px 0px 20px 370px;
-  gap: 17px;
+  gap: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.our-equipment-sponsorship-list div {
-  height: 100%;
-  width: 100;
-  max-width: 180px;
-  max-height: 70px;
-  -ms-flex-item-align: center;
-      align-self: center;
-  justify-self: center;
-}
-.our-equipment-sponsorship-list div img {
-  height: 100%;
-  width: 100;
-  max-width: 180px;
-  max-height: 70px;
 }
 
 .our-equipment-oven-on-the-left-side {
@@ -1625,9 +1610,6 @@ main .information-about-company-video-popover .information-about-company-video-b
   .about-us {
     padding: 30px 100px 30px 50px;
   }
-  main .quote-marks {
-    right: 1%;
-  }
   .footer-informations-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1684,17 +1666,10 @@ main .information-about-company-video-popover .information-about-company-video-b
   main .company-head-information {
     position: relative;
     gap: 50px;
-    height: 483px;
-    overflow: hidden;
+    background-color: black;
   }
   main .company-head-information .company-head-picture {
     max-height: unset;
-    height: 483px;
-    position: absolute;
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-    bottom: -70px;
-    left: 482px;
   }
   main .company-head-text {
     margin-left: 0;
