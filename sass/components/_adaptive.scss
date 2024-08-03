@@ -1,0 +1,395 @@
+@media screen and (max-width: 1555px) {
+  .our-equipment-machine-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .our-equipment-oven-on-the-left-side {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    bottom: unset;
+  }
+  .our-equipment-sponsorship-list {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .our-equipment-sponsor-logo {
+    max-width: 100%;
+  }
+  .inner-text {
+    top: 200px;
+  }
+
+  .our-events,
+  .our-projects {
+    margin: 100px 20px;
+  }
+
+  .main-carousel-arrow {
+    top: 210px;
+  }
+  .arrow-left {
+    left: 0px;
+  }
+
+  .arrow-right {
+    right: 0px;
+  }
+  .about-us {
+    padding: 30px 100px 30px 200px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .our-equipment-oven-on-the-left-side {
+    display: none;
+  }
+  .prev-arrow {
+    left: 20px;
+  }
+  .next-arrow {
+    right: 20px;
+  }
+  .prev-arrow,
+  .next-arrow {
+    height: 38px;
+    width: 38px;
+  }
+
+  .our-equipment-machine-list {
+    margin: 20px 20px;
+  }
+  .our-equipment-sponsorship-list {
+    padding: 20px 20px;
+  }
+  .our-equipment-navigation-box {
+    padding: 0px 20px 20px 20px;
+  }
+  .our-equipment-navigation-text {
+    margin-top: 20px;
+  }
+  .inner-text {
+    top: 287px;
+    left: 120px;
+    right: 120px;
+    p {
+      &:first-child {
+        font-size: 24px;
+      }
+      &:last-child {
+        font-size: 50px;
+      }
+    }
+  }
+
+  main {
+    .company-head-information {
+      justify-content: space-between;
+      gap: 0px;
+      padding: 0 20px;
+      .company-head-picture {
+        max-height: 442px;
+
+        img {
+          max-height: 442px;
+        }
+      }
+    }
+    .company-head-text {
+      margin-left: -40px;
+      p {
+        max-width: 550px;
+      }
+    }
+  }
+  .footer-informations-box,
+  .footer-informations-item-box {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .our-equipment-sponsorship-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .navigation-list-burger-menu {
+    display: flex;
+  }
+  .header-logo {
+    order: 1;
+  }
+  .navigation-list-box {
+    order: 3;
+  }
+  .modal-button {
+    order: 2;
+  }
+
+  .navigation-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    z-index: 1;
+    border-radius: 10px;
+    li {
+      width: 100%;
+
+      a {
+        width: 100%;
+        padding: 15px;
+
+        &:hover {
+          background-color: #340600;
+        }
+      }
+    }
+  }
+  .navigation-list-box:hover .navigation-list {
+    display: flex;
+  }
+
+  .about-us {
+    padding: 30px 100px 30px 50px;
+  }
+  main {
+    .quote-marks {
+      right: 1%;
+    }
+  }
+
+  .footer-informations-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-equipment-navigation-text {
+    @include font-properties(800, 40, #8d2114);
+    text-align: center;
+    margin-top: 30px;
+  }
+  .about-us-media {
+    div {
+      p,
+      span {
+        @include font-properties(800, 40, #340600);
+      }
+      p {
+        color: #8d2114;
+      }
+    }
+  }
+  .inner-text {
+    top: 135px;
+    left: 5%;
+    right: 5%;
+    p {
+      text-align: center;
+      &:first-child {
+        @include font-properties(700, 24, var(--project-white));
+      }
+
+      &:last-child {
+        @include font-properties(900, 40, var(--project-white));
+        text-transform: uppercase;
+      }
+    }
+  }
+  .prev-arrow,
+  .next-arrow {
+    height: 38px;
+    width: 38px;
+    top: 380px;
+  }
+  .prev-arrow {
+    left: 30%;
+  }
+
+  .next-arrow {
+    right: 30%;
+  }
+
+  .carousel-section-picture {
+    height: 450px;
+  }
+  .carousel-dots {
+    display: none;
+  }
+  .different-business-areas {
+    display: flex;
+  }
+
+  main {
+    .company-head-information {
+      position: relative;
+      gap: 50px;
+      height: 483px;
+      overflow: hidden;
+      .company-head-picture {
+        max-height: unset;
+        height: 483px;
+        position: absolute;
+        transform: scaleX(-1);
+        bottom: -70px;
+        left: 482px;
+      }
+    }
+
+    .company-head-text {
+      margin-left: 0;
+      margin: 110px 0px 70px 20px;
+      p {
+        max-width: 450px;
+      }
+    }
+
+    .ask-your-question-modal-button {
+      background-color: #ffb734;
+      border-radius: 8px;
+      font-size: 18px;
+      padding: 18px 34px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+  .main-carousel-item {
+    flex: 0 0 50%;
+  }
+  .about-us-text {
+    p {
+      @include font-properties(800, 36, #8d2114);
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .our-events,
+  .our-projects,
+  .butchery-our-events,
+  .butchery-our-projects {
+    margin: 20px;
+  }
+  .our-equipment-machine-list {
+    margin: 0px 0px;
+  }
+  .different-business-areas-box {
+    gap: 30px;
+  }
+  .different-business-areas-box-for-two {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .our-equipment-machine-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+  }
+  .company-head-picture {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .navigation-list-burger-menu{
+        padding: 20px;
+    }
+    .header-logo {
+        width: 70%;
+        height: 70%;
+    }
+
+  .our-equipment-sponsorship-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .information-about-company-text {
+    position: absolute;
+    top: 200px;
+    margin: 20px;
+    P {
+      text-align: center;
+      &:first-child {
+        @include font-properties(800, 26, var(--project-white));
+      }
+      &:nth-child(2) {
+        @include font-properties(400, 14, var(--project-white));
+        max-width: 680px;
+        line-height: 20px;
+      }
+      &:last-child {
+        @include font-properties(400, 16, var(--project-white));
+        margin-top: 200px;
+      }
+    }
+  }
+  .company-head-text {
+    margin-left: 0;
+    margin: 20px;
+    p {
+      &:first-child {
+        line-height: 25px;
+
+        @include font-properties(900, 20, #8d2114);
+      }
+      &:nth-child(2) {
+        @include font-properties(400, 18, #340600);
+      }
+      &:nth-child(3) {
+        @include font-properties(700, 18, #8d2114);
+      }
+      &:nth-child(4) {
+        @include font-properties(400, 16, #340600);
+      }
+    }
+  }
+  .about-us {
+    padding: 20px;
+  }
+  .our-equipment-navigation-text {
+    @include font-properties(800, 30, #8d2114);
+    text-align: center;
+    margin-top: 30px;
+  }
+  .main-carousel-item {
+    flex: 0 0 100%;
+  }
+  .about-us-text {
+    p {
+      @include font-properties(800, 26, #8d2114);
+    }
+  }
+  .about-us-media {
+    flex-direction: column;
+    div {
+      p,
+      span {
+        @include font-properties(800, 30, #340600);
+      }
+      p {
+        color: #8d2114;
+      }
+    }
+  }
+  .footer-informations {
+    gap: 20px;
+    flex-direction: column;
+    align-items: start;
+  }
+  .footer-informations-item-box {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .our-equipment-navigation-text {
+    @include font-properties(800, 26, #8d2114);
+    margin-top: 20px;
+  }
+}

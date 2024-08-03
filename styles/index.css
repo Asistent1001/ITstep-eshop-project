@@ -558,7 +558,7 @@ main .information-about-company-main-picture {
 }
 main .information-about-company-text {
   position: absolute;
-  top: 17%;
+  top: 10px;
 }
 main .information-about-company-text P {
   text-align: center;
@@ -803,6 +803,8 @@ main .information-about-company-video-popover .information-about-company-video-b
           align-items: center;
 }
 .our-equipment-machine-list-item img {
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 
@@ -817,19 +819,9 @@ main .information-about-company-video-popover .information-about-company-video-b
           align-items: center;
 }
 .our-equipment-sponsorship-list div {
-  height: 100%;
-  width: 100;
-  max-width: 180px;
-  max-height: 70px;
   -ms-flex-item-align: center;
       align-self: center;
   justify-self: center;
-}
-.our-equipment-sponsorship-list div img {
-  height: 100%;
-  width: 100;
-  max-width: 180px;
-  max-height: 70px;
 }
 
 .our-equipment-oven-on-the-left-side {
@@ -851,6 +843,7 @@ main .information-about-company-video-popover .information-about-company-video-b
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+  overflow: hidden;
 }
 
 .our-events,
@@ -886,9 +879,28 @@ main .information-about-company-video-popover .information-about-company-video-b
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  position: relative;
   gap: 20px;
   width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-carousel-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .main-carousel-arrow {
@@ -924,16 +936,9 @@ main .information-about-company-video-popover .information-about-company-video-b
   right: 370px;
 }
 
-.main-carousel-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-  width: 33%;
+.main-carousel-img {
+  width: 100%;
+  height: auto;
 }
 
 .main-carousel-title {
@@ -1486,13 +1491,10 @@ main .information-about-company-video-popover .information-about-company-video-b
     grid-template-columns: repeat(6, 1fr);
   }
   .our-equipment-sponsor-logo {
-    max-width: 146px;
+    max-width: 100%;
   }
   .inner-text {
     top: 200px;
-  }
-  .main-carousel-img {
-    height: 225px;
   }
   .our-events,
   .our-projects {
@@ -1574,6 +1576,10 @@ main .information-about-company-video-popover .information-about-company-video-b
   }
 }
 @media screen and (max-width: 1024px) {
+  .our-equipment-sponsorship-list {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
   .navigation-list-burger-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1639,6 +1645,22 @@ main .information-about-company-video-popover .information-about-company-video-b
   }
 }
 @media screen and (max-width: 768px) {
+  .our-equipment-navigation-text {
+    font-weight: 800;
+    font-size: 40px;
+    color: #8d2114;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .about-us-media div p,
+  .about-us-media div span {
+    font-weight: 800;
+    font-size: 40px;
+    color: #340600;
+  }
+  .about-us-media div p {
+    color: #8d2114;
+  }
   .inner-text {
     top: 135px;
     left: 5%;
@@ -1710,5 +1732,170 @@ main .information-about-company-video-popover .information-about-company-video-b
     padding: 18px 34px;
     font-size: 18px;
     font-weight: 700;
+  }
+  .main-carousel-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+  .about-us-text p {
+    font-weight: 800;
+    font-size: 36px;
+    color: #8d2114;
+  }
+}
+@media screen and (max-width: 670px) {
+  .our-events,
+  .our-projects,
+  .butchery-our-events,
+  .butchery-our-projects {
+    margin: 20px;
+  }
+  .our-equipment-machine-list {
+    margin: 0px 0px;
+  }
+  .different-business-areas-box {
+    gap: 30px;
+  }
+  .different-business-areas-box-for-two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .our-equipment-machine-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+  }
+  .company-head-picture {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navigation-list-burger-menu {
+    padding: 20px;
+  }
+  .header-logo {
+    width: 70%;
+    height: 70%;
+  }
+  .our-equipment-sponsorship-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .information-about-company-text {
+    position: absolute;
+    top: 200px;
+    margin: 20px;
+  }
+  .information-about-company-text P {
+    text-align: center;
+  }
+  .information-about-company-text P:first-child {
+    font-weight: 800;
+    font-size: 26px;
+    color: var(--project-white);
+  }
+  .information-about-company-text P:nth-child(2) {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--project-white);
+    max-width: 680px;
+    line-height: 20px;
+  }
+  .information-about-company-text P:last-child {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--project-white);
+    margin-top: 200px;
+  }
+  .company-head-text {
+    margin-left: 0;
+    margin: 20px;
+  }
+  .company-head-text p:first-child {
+    line-height: 25px;
+    font-weight: 900;
+    font-size: 20px;
+    color: #8d2114;
+  }
+  .company-head-text p:nth-child(2) {
+    font-weight: 400;
+    font-size: 18px;
+    color: #340600;
+  }
+  .company-head-text p:nth-child(3) {
+    font-weight: 700;
+    font-size: 18px;
+    color: #8d2114;
+  }
+  .company-head-text p:nth-child(4) {
+    font-weight: 400;
+    font-size: 16px;
+    color: #340600;
+  }
+  .about-us {
+    padding: 20px;
+  }
+  .our-equipment-navigation-text {
+    font-weight: 800;
+    font-size: 30px;
+    color: #8d2114;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .main-carousel-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .about-us-text p {
+    font-weight: 800;
+    font-size: 26px;
+    color: #8d2114;
+  }
+  .about-us-media {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-us-media div p,
+  .about-us-media div span {
+    font-weight: 800;
+    font-size: 30px;
+    color: #340600;
+  }
+  .about-us-media div p {
+    color: #8d2114;
+  }
+  .footer-informations {
+    gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .footer-informations-item-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+@media screen and (max-width: 320px) {
+  .our-equipment-navigation-text {
+    font-weight: 800;
+    font-size: 26px;
+    color: #8d2114;
+    margin-top: 20px;
   }
 }

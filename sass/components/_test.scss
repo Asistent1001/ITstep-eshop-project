@@ -1,0 +1,113 @@
+// .our-events,
+// .our-projects,
+// .butchery-our-events,
+// .butchery-our-projects {
+//     position: relative;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 30px;
+// }
+
+// .our-events,
+// .our-projects {
+//     margin: 100px 0 100px 370px;
+// }
+
+// .butchery-our-events,
+// .butchery-our-projects {
+//     margin: 100px 0 100px 80px;
+// }
+
+// .our-projects-title {
+//     @include font-properties(800, 50, #8d2114);
+// }
+
+// .main-carousel-box-box {
+//     overflow: hidden;
+//     position: relative;
+//     width: 100%;
+// }
+
+// .main-carousel-box {
+//     display: flex;
+//     flex-direction: row;
+//     transition: transform 0.3s ease;
+//     gap: 20px;
+//     width: 100%;
+// }
+
+// .main-carousel-arrow {
+//     transition: all 200ms;
+//     position: absolute;
+//     background-color: rgb(219, 219, 219);
+//     width: 66px;
+//     height: 66px;
+//     border-radius: 50%;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     z-index: 100;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     &:hover {
+//         transform: scale(1.07);
+//     }
+// }
+
+// .arrow-left {
+//     left: 10px;
+// }
+
+// .arrow-right {
+//     right: 10px;
+// }
+
+// .main-carousel-item {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+//     flex: 0 0 33.3333%; /* Три элемента видимы одновременно */
+//     box-sizing: border-box;
+//     transition: all 0.3s ease;
+// }
+
+// .main-carousel-img {
+//     width: 100%;
+//     height: auto;
+// }
+
+// .main-carousel-title {
+//     @include font-properties(700, 24, #340600);
+// }
+
+// .main-carousel-place {
+//     @include font-properties(600, 14, #340600);
+//     opacity: 50%;
+// }
+
+// .main-carousel-hashtag-box,
+// .main-carousel-date-box {
+//     background-color: rgba(52, 6, 0, 0.1);
+//     border-radius: 16px 16px 16px 0;
+//     padding: 6px 18px;
+//     width: fit-content;
+// }
+
+// .main-carousel-hashtag-box-box {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     gap: 10px;
+// }
+
+// .main-carousel-hashtag {
+//     @include font-properties(600, 14, #340600);
+// }
+
+// .main-carousel-date-box {
+//     background-color: #8d2114;
+// }
+
+// .main-carousel-date {
+//     @include font-properties(600, 14, var(--project-white));
+// }

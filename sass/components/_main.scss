@@ -82,7 +82,7 @@ main {
 
     .information-about-company-text {
         position: absolute;
-        top: 17%;
+        top: 10px;
         P {
             text-align: center;
             &:first-child {
@@ -269,6 +269,8 @@ main {
 
 .our-equipment-machine-list-item {
     img {
+        width: 100%;
+        height: 100%;
         border-radius: 10px;
     }
     border: 1px solid rgba(52, 6, 0, 0.11);
@@ -288,18 +290,8 @@ main {
     gap: 17px;
     align-items: center;
     div {
-        height: 100%;
-        width: 100;
-        max-width: 180px;
-        max-height: 70px;
         align-self: center;
         justify-self: center;
-        img {
-            height: 100%;
-            width: 100;
-            max-width: 180px;
-            max-height: 70px;
-        }
     }
 }
 
@@ -329,6 +321,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    overflow: hidden;
 }
 
 .our-events,
@@ -354,11 +347,20 @@ main {
     display: flex;
     flex-direction: row;
     transition: transform 0.3s ease;
-    position: relative;
     gap: 20px;
     width: 100%;
+    box-sizing: border-box;
+    
 }
 
+.main-carousel-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 0 0 33%;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
 // .main-carousel-arrow-box {
 //   max-width: 1180px;
 //   position: relative;
@@ -389,12 +391,11 @@ main {
     right: 370px;
 }
 
-.main-carousel-item {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 33%;
+.main-carousel-img {
+    width: 100%;
+    height: auto;
 }
+
 
 .main-carousel-title {
     @include font-properties(700, 24, #340600);
