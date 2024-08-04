@@ -998,6 +998,16 @@ main .information-about-company-video-popover .information-about-company-video-b
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.butchery-main-div-introduction-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1016,16 +1026,31 @@ main .information-about-company-video-popover .information-about-company-video-b
       -ms-flex-align: center;
           align-items: center;
 }
-.left-side-navigation div {
-  min-width: 290px;
-}
 
 .left-side-navigation-description {
   font-weight: 700;
   font-size: 24px;
   color: #79271b;
-  padding: 20px 0px 20px 30px;
-  text-align: start;
+  padding: 15px;
+}
+
+.left-side-navigation-open-button {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #FFEFDF;
+}
+.left-side-navigation-open-button p {
+  font-weight: 700;
+  font-size: 24px;
+  color: #340600;
 }
 
 .left-side-navigation-items ul {
@@ -1038,31 +1063,26 @@ main .information-about-company-video-popover .information-about-company-video-b
           flex-direction: column;
 }
 .left-side-navigation-items ul a li {
-  padding: 20px 0px;
-  min-width: 290px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-auto-rows: 1fr;
+  width: 289px;
+  gap: 20px;
+  padding: 10px 0px;
 }
 .left-side-navigation-items ul a li:hover {
   background-color: #e7e7e7;
 }
-.left-side-navigation-items ul a li div {
-  margin-left: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  min-width: 50px;
+.left-side-navigation-items ul a li div:first-child {
+  padding-left: 5px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+}
+.left-side-navigation-items ul a li div:last-child {
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: start;
 }
 .left-side-navigation-items ul a li div p {
   font-weight: 700;
@@ -1070,12 +1090,34 @@ main .information-about-company-video-popover .information-about-company-video-b
   color: #79271b;
 }
 
-.information {
-  position: relative;
+.butchery-main-div-introduction-picture-box {
+  height: 100%;
+  width: 100%;
 }
 
 .butchery-main-div-introduction-picture {
-  max-width: 1630px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.information {
+  position: relative;
+  display: none;
+}
+.information div {
+  display: none;
+}
+
+.butchery-main-div-introduction-picture {
+  max-width: 100%;
+}
+
+.butchery-main-div {
+  margin-left: 289px;
 }
 
 .information {
@@ -1187,18 +1229,21 @@ main .information-about-company-video-popover .information-about-company-video-b
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ffefdf;
+  gap: 20px;
 }
 .more-butchery-information p {
   max-width: 1050px;
   gap: 30px;
-  margin: 40px 0px 40px 80px;
+  margin-left: 80px;
 }
 .more-butchery-information p:first-child {
+  margin-top: 40px;
   font-weight: 800;
   font-size: 30px;
   color: #340600;
 }
 .more-butchery-information p:last-child {
+  margin-bottom: 40px;
   font-weight: 400;
   font-size: 18px;
   color: #340600;
@@ -1279,20 +1324,13 @@ main .information-about-company-video-popover .information-about-company-video-b
   margin-left: 80px;
 }
 .our-equipment-list ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
 }
 .our-equipment-list ul li {
-  max-width: 180px;
   border: 1.5px rgba(52, 6, 0, 0.12) solid;
   border-radius: 10px;
   display: -webkit-box;
@@ -1311,8 +1349,8 @@ main .information-about-company-video-popover .information-about-company-video-b
 }
 .our-equipment-list ul li img {
   border-radius: 10px;
-  width: 178px;
-  height: 178px;
+  width: 100%;
+  height: 100%;
 }
 .our-equipment-list ul li p {
   font-weight: 400;
@@ -1551,6 +1589,14 @@ main .information-about-company-video-popover .information-about-company-video-b
   .inner-text p:last-child {
     font-size: 50px;
   }
+  .our-equipment-list ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+  .our-equipment-list ul li img {
+    max-width: 187px;
+  }
   main .company-head-information {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1576,6 +1622,60 @@ main .information-about-company-video-popover .information-about-company-video-b
   }
 }
 @media screen and (max-width: 1024px) {
+  .our-equipment-list {
+    margin: 20px;
+  }
+  .butchery-our-events,
+  .butchery-our-projects {
+    margin: 20px;
+  }
+  .solutions-for-business {
+    margin: 0;
+    padding: 20px;
+  }
+  .solutions-for-business-description {
+    margin: 0;
+  }
+  .more-butchery-information p {
+    margin: 5px 20px;
+  }
+  .more-butchery-information p:first-child {
+    font-weight: 800;
+    font-size: 26px;
+    color: #340600;
+  }
+  .butchery-main-div {
+    margin-left: 0;
+  }
+  .butchery-main-div-introduction-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .left-side-navigation-description {
+    display: none;
+  }
+  .left-side-navigation {
+    position: relative;
+  }
+  .left-side-navigation-items {
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+  }
+  .left-side-navigation-items ul {
+    background-color: #ffefdf;
+  }
+  .left-side-navigation-items ul a li {
+    padding: 10px;
+  }
+  .left-side-navigation-open-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .our-equipment-sponsorship-list {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -1703,6 +1803,10 @@ main .information-about-company-video-popover .information-about-company-video-b
     display: -ms-flexbox;
     display: flex;
   }
+  main .information-about-company-main-picture {
+    height: 400px;
+    width: 100%;
+  }
   main .company-head-information {
     position: relative;
     gap: 50px;
@@ -1745,6 +1849,12 @@ main .information-about-company-video-popover .information-about-company-video-b
   }
 }
 @media screen and (max-width: 670px) {
+  .our-equipment-list ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
   .our-events,
   .our-projects,
   .butchery-our-events,
@@ -1774,6 +1884,19 @@ main .information-about-company-video-popover .information-about-company-video-b
   }
 }
 @media screen and (max-width: 480px) {
+  .left-side-navigation-items ul {
+    width: 100%;
+  }
+  .left-side-navigation-items ul a li {
+    width: 100%;
+  }
+  .our-equipment-list ul {
+    gap: 5px;
+  }
+  main .information-about-company-main-picture {
+    height: 550px;
+    width: 100%;
+  }
   .navigation-list-burger-menu {
     padding: 20px;
   }

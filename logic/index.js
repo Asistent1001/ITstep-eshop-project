@@ -57,23 +57,3 @@ function init() {
 }
 
 init();
-
-document.addEventListener('DOMContentLoaded', function() {
-  const button = document.querySelector('.modal-button');
-  const originalText = 'Свяжитесь с нами';
-  const iconHTML = '<i class="fa-solid fa-phone-volume" style="color: #ffffff;"></i>';
-
-  function updateButtonText() {
-      if (window.innerWidth < 480) {
-          button.innerHTML = iconHTML;
-      } else {
-          button.innerHTML = originalText;
-      }
-  }
-
-  // Initial check
-  updateButtonText();
-
-  // Add event listener for window resize
-  window.addEventListener('resize', updateButtonText);
-});
