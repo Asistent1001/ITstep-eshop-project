@@ -1,6 +1,5 @@
 # NHL-Retail Company Website
-
-A fully responsive static website for NHL-Retail, a leading company specializing in comprehensive solutions for equipping retail networks, bakeries, butcheries, and production facilities. The site features interactive carousels, modals, navigation menus, and dynamic content toggles, built with vanilla web technologies for optimal performance and accessibility.
+A fully responsive static website developed as a course assignment for Step IT Academy. The site, designed based on a Figma prototype, represents NHL-Retail, a company specializing in comprehensive solutions for equipping retail networks, bakeries, butcheries, and production facilities. It features interactive carousels, modals, navigation menus, and dynamic content toggles, built with vanilla web technologies for optimal performance and accessibility.
 
 ![Website Preview](./images/screenshot.png)
 
