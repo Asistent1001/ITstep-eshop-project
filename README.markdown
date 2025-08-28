@@ -6,8 +6,7 @@ A fully responsive static website for NHL-Retail, a leading company specializing
 
 ## 🚀 Live Demo
 
-[View the live website here ↗](https://your-deployment-url.com/)  
-*(Replace with actual deployment URL, e.g., GitHub Pages or Vercel)*
+[View the live website here ↗](https://asistent1001.github.io/ITstep-eshop-project/)  
 
 ## 🛠️ Tech Stack
 
